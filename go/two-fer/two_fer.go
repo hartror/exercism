@@ -1,7 +1,9 @@
 // Package twofer you and one for me.
 package twofer
 
-import ( "fmt" )
+import (
+	"fmt"
+)
 
 // ShareWith returns sentence about sharing with someone.
 func ShareWith(name string) string {
