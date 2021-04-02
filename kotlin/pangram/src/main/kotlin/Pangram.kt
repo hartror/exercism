@@ -1,6 +1,8 @@
 object Pangram {
 
+    private const val ALPHABET_LENGTH = 26
+
     fun isPangram(input: String): Boolean {
-        TODO("Implement this function to complete the task")
+        return input.toLowerCase().filter{ it.isLetter() }.toList().toSet().size == ALPHABET_LENGTH
     }
 }
