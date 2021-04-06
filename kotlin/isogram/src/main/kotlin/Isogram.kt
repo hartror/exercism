@@ -1,6 +1,14 @@
 object Isogram {
 
     fun isIsogram(input: String): Boolean {
-        TODO("Implement this function to complete the task")
+        val letters = HashSet<Char>()
+        for (l in input.toLowerCase().replace(" ", "").replace("-", "")) {
+            if (letters.contains(l)) {
+                return false
+            } else {
+                letters.add(l)
+            }
+        }
+        return true
     }
 }
